@@ -1,0 +1,62 @@
+<!-- refer to this slides for instruction, copy and paste the link in search bar: https://docs.google.com/presentation/d/1uKOjrH9VFBNkjSNStVHwwksRpjnCwhlJdfExmW121D0/edit?usp=sharing -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Translator App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+   <div>
+    <img src="logo.png" alt="" height="60px">
+  </div>
+    <h1>Simple Translator</h1>
+    <p>Embrace the Power of Translation</p>
+   
+
+   <form>
+    <div class="inputs-container">
+      <div class="input-container">
+       <select id="inputLanguage">
+        <option value="english">English</option>
+        <option value="malay">Malay</option>
+        <option value="spanish">Spanish</option>
+       </select>
+       <textarea
+         id="inputText" 
+         placeholder = "Type your text here"
+       ></textarea>
+      </div>
+
+       <div class="input-container">
+         <select id="outputLanguage">
+           <option value="english">English</option>
+           <option value="malay">Malay</option>
+           <option value="spanish">Spanish</option>
+         </select>
+         <textarea
+           id="translatedText"
+           placeholder="Translation Not Found"
+           readonly
+         ></textarea>
+       </div>
+    </div>
+
+    <button type="button" onclick="translateText()">Translate</button>
+    
+   </form>
+ </main>
+
+ <div id="cover">
+  <img src="translator-man.png" alt=""/>
+ </div>
+
+ <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
